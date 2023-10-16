@@ -17,6 +17,11 @@ sudo install minikube-darwin-arm64 /usr/local/bin/minikube
 minikube start --driver=docker
 ```
 
+## Architecture
+
+![image](https://github.com/shashikiran797/k8s-postgres-cluster/assets/16119169/6fc93ce7-31e7-40ab-972a-e2f5057a0131)
+
+
 ### Folder structure
 
 <pre>
