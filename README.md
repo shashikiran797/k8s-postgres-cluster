@@ -115,5 +115,5 @@ kubectl delete ns postgres-ns
 
 ### Caveats
 
-- Passwords are hardcoded in the configmap. This is not a good practice. In real world, we should use secrets to store the passwords.
+- Passwords are hardcoded in yml. This is not a good practice. In real world, we should use secrets to store the passwords.
 - Services are exposed using ClusterIP. Not using headless service intentionally. This is to be able to load balance the requests to the slave.
