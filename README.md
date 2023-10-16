@@ -80,15 +80,17 @@ kubectl logs -f postgres-slave-0 -n postgres-ns
 kubectl logs -f postgres-slave-1 -n postgres-ns
 ```
 
-### Connect to the postgres cluster
+### Connect to the postgres pods directly
 ```bash
 kubectl exec -it postgres-master-0 -n postgres-ns -- psql -U postgres
 kubectl exec -it postgres-slave-0 -n postgre-ns -- psql -U postgres
 kubectl exec -it postgres-slave-1 -n postgres-ns -- psql -U postgres
 ```
 OR
+
+### Expose the service and connect to it
+
 ```
-# Expose the service and connect to it
 
 # Master
 minikube service postgres-master-service -n postgres-ns --url
