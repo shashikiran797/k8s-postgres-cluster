@@ -4,7 +4,7 @@ metadata:
   name: postgres-master-service
   namespace: postgres-ns
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: postgres
   ports:

@@ -23,7 +23,7 @@ spec:
 
         env:
         - name: POSTGRES_PASSWORD
-          value: anotherpassword
+          value: randompassword
         volumeMounts:
         - name: postgres-slave-storage
           mountPath: /var/lib/postgresql/data
